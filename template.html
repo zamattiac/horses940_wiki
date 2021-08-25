@@ -1,0 +1,48 @@
+<html>
+
+<head>
+<title>{page}</title>
+<style>
+#container {{ 
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid black;
+    height: auto;
+}}
+#floated {{
+/* 
+    height: 100px;
+    width: 100px;
+ */
+ 	position: relative;
+ 	top: 0px;
+    float: right; 
+    margin: 10px;
+    width: 200px;
+/*     background: red; */
+}}
+</style>
+</head>
+<body>
+<div style="display: inline-block; width: 100%"><img height="75px" HSPACE=50 src="wiki.png" style="float: left;""><h1>Horses940 Wiki</h1></div>
+<div id="container">
+	<h1>{page}</h2>
+	
+	<p>
+	{intro}
+	</p>
+	<div id="floated">
+		<img src="{pic}.png" width="200px">
+		<h5>{photo_alt}</h5>
+	</div>
+
+	{body}
+
+</div>
+
+<div id="container">
+<h2>Comments</h2>
+{comments}
+</div>
+</body>
+</html>
